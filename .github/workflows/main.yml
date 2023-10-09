@@ -11,7 +11,7 @@ on:
   # run on every push on the master branch
   push:
     branches:
-    - master
+      - main
     
   
 
@@ -21,8 +21,7 @@ jobs:
     timeout-minutes: 10
     
     steps:
-      - name: Checkout
-        uses: actions/checkout@main
+    
       # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
       - name: generate github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v3
